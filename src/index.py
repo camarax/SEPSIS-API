@@ -33,9 +33,6 @@ def require_token(func):
 # ------------------------------------------------------------------------
 
 
-
-
-
 # Point de terminaison de prediction()
 @app.route("/predict", methods=['POST'])
 @require_token
