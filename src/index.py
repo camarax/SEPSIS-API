@@ -2,9 +2,7 @@ from flask import Flask,jsonify, request, abort
 import pandas as pd
 from functools import wraps
 
-# import du model
-import joblib
-model = joblib.load('model/pipe_modele.model')
+from Sepsis import Sepsis
 
 
 app = Flask(__name__)
@@ -41,28 +39,17 @@ def predict():
         Params : 
             Data : les caracteris
     '''
-    classe = ["Négatif","Positif"]
+    sepsis = Sepsis()
     data = request.get_json()
-    # # 0. Conversion du fichier json en dataFrame
-    data = pd.DataFrame([data])
-
-    # # 2. Estimation du modèle
-    predict = model.predict(data)
-    predict_proba = model.predict_proba(data).tolist()
-
-
-    decimal_proba_list = [format(prob, '.16f') for prob in predict_proba[0]]
-    proba = int(float(decimal_proba_list[predict[0]])*100)
-
-    # # 3. Renvoie du resultat
-    return jsonify({"Prédiction": str(classe[predict[0]]),"Probalité" : str(proba)})
+    return sepsis.predict("model/pipe_modele.model",data)
 
 
 # Point de terminaison de monitoring
 @app.route("/health", methods=['GET'])
 @require_token
 def health():
-    return jsonify({"response" : str(200)})
+    sepsis = Sepsis()
+    return sepsis.health()
 
 if __name__ == "__main__":
     app.run(debug=True)
