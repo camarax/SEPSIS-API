@@ -1,0 +1,132 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "API de détection du sepsis",
+      "description": "API permettant la prédiction du sepsis chez les individus",
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "http://127.0.0.1:5000"
+      }
+    ],
+    "paths": {
+      "/predict": {
+        "post": {
+          "summary": "Effectue une prédiction de sepsis",
+          "operationId": "predict",
+          "tags": ["Prediction"],
+          "requestBody": {
+            "description": "Données d'entrée du modèle de prédiction",
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PredictionInput"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Prédiction réussie",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PredictionOutput"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/health": {
+        "get": {
+          "summary": "Vérifie l'état de santé de l'API",
+          "operationId": "health",
+          "tags": ["Monitoring"],
+          "responses": {
+            "200": {
+              "description": "L'API est en ligne",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/HealthOutput"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "PredictionInput": {
+          "type": "object",
+          "properties": {
+            "PRG": {
+              "type": "integer"
+            },
+            "PL": {
+              "type": "integer"
+            },
+            "PR": {
+              "type": "integer"
+            },
+            "SK": {
+              "type": "integer"
+            },
+            "TS": {
+              "type": "integer"
+            },
+            "M11": {
+              "type": "number"
+            },
+            "BD2": {
+              "type": "number"
+            },
+            "Age": {
+              "type": "integer"
+            },
+            "Insurance": {
+              "type": "number"
+            }
+          }
+        },
+        "PredictionOutput": {
+          "type": "object",
+          "properties": {
+            "Prédiction": {
+              "type": "string"
+            },
+            "Probabilité": {
+              "type": "number"
+            }
+          }
+        },
+        "HealthOutput": {
+          "type": "object",
+          "properties": {
+            "response": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "securitySchemes": {
+        "BearerAuth": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT"
+        }
+      }
+    },
+    "security": [
+      {
+        "BearerAuth": []
+      }
+    ]
+  }
+  

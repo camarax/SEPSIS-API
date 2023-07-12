@@ -1,11 +1,23 @@
 from flask import Flask,jsonify, request, abort
 import pandas as pd
 from functools import wraps
-
+from flask_swagger_ui import get_swaggerui_blueprint
 from Sepsis import Sepsis
 
 
 app = Flask(__name__)
+
+SWAGGER_URL = '/swagger'
+API_URL = '/static/swagger.json'
+SWAGGER_BLUEPRINT = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config = {
+        'app_name' : "Todo list API"
+    }
+)
+
+app.register_blueprint(SWAGGER_BLUEPRINT, url_prefix = SWAGGER_URL)
 
 
 # ------------------------------------------------------------------------
@@ -22,7 +34,7 @@ def require_token(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         # Récupérer le jeton d'accès à partir de l'en-tête Authorization
-        token = request.headers.get('Authorization')
+        token = request.headers.get('Authorization', '').replace('Bearer ', '')
         if not token or not validate_token(token):
             abort(401)  # Renvoyer une erreur 401 Unauthorized si le jeton est invalide ou manquant
         return func(*args, **kwargs)
