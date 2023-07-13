@@ -47,6 +47,9 @@ Assurez-vous d'avoir les dépendances nécessaires installées avant d'exécuter
 
 La documentation complète du code backend de l'API est disponible dans le fichier documentation_backend.md. Il fournit des informations détaillées sur les différentes classes, fonctions et points de terminaison de l'API.
 
+Vous pouvez égalemnt accéder à la docuement de l'API swagger de l'API à l'adresse suivant : 
+**'http://localhost:5000/swagger'**
+
 ## Contributions
 
 Les contributions à ce projet sont les bienvenues. Si vous souhaitez apporter des améliorations, veuillez soumettre une demande d'extraction avec vos modifications.
