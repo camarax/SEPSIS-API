@@ -1,0 +1,64 @@
+ * Serving Flask app 'index'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 953-145-739
+ * Serving Flask app 'index'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 953-145-739
+127.0.0.1 - - [13/Jul/2023 09:54:30] "GET /swagger/ HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jul/2023 09:54:30] "GET /swagger/index.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:30] "GET /swagger/swagger-ui.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:30] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:30] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jul/2023 09:54:30] "GET /static/swagger.json HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:30] "GET /swagger/favicon-32x32.png HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:38] "GET /swagger/ HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jul/2023 09:54:38] "GET /swagger/index.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:38] "GET /swagger/swagger-ui.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:38] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:38] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:38] "GET /static/swagger.json HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:38] "GET /swagger/favicon-32x32.png HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:39] "GET /swagger/ HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jul/2023 09:54:39] "GET /swagger/index.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:39] "GET /swagger/swagger-ui.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:39] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:39] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:39] "GET /static/swagger.json HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:39] "GET /swagger/favicon-32x32.png HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/ HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/index.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/swagger-ui.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /static/swagger.json HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/favicon-32x32.png HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/ HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/index.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/swagger-ui.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:40] "GET /static/swagger.json HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:47] "GET /swagger/ HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jul/2023 09:54:47] "GET /swagger/index.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:47] "GET /swagger/swagger-ui.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:47] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:47] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:54:47] "GET /static/swagger.json HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:56:48] "GET /swagger/ HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jul/2023 09:56:48] "GET /swagger/index.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:56:48] "GET /swagger/swagger-ui.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:56:48] "GET /swagger/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:56:48] "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:56:48] "GET /static/swagger.json HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:56:48] "GET /swagger/favicon-32x32.png HTTP/1.1" 304 -
+127.0.0.1 - - [13/Jul/2023 09:57:08] "GET /health HTTP/1.1" 200 -

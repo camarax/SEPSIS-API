@@ -56,4 +56,6 @@ Les contributions à ce projet sont les bienvenues. Si vous souhaitez apporter d
 
 ## Auteurs
 
-Ce projet a été développé par **Aboubacar CAMARA**, **Aaricia DOMINGUEZ** et **Adrien ALVAREZ** dans le cadre du projet annuel de l'école ESGI Lyon. Si vous avez des questions, veuillez nous contacter à l'adresse **aa-dz@hotmail.com** ou **aboubacar.camara.abk@gmail.com**.
+Ce projet a été développé par **Aboubacar CAMARA**, **Aaricia DOMINGUEZ** et **Adrien ALVAREZ** dans le cadre du projet annuel de l'école ESGI Lyon. Si vous avez des questions, veuillez nous contacter à l'adresse **aa-dz@hotmail.com**, **aboubacar.camara.abk@gmail.com** ou **adrienalvarezzpro@gmail.com**
+
+
