@@ -38,7 +38,7 @@ L'API utilise une authentification basée sur les jetons d'accès. Pour accéder
 Le fichier **'testSepsis.py'** contient des tests unitaires pour vérifier le bon fonctionnement des différentes fonctions de la classe **'Sepsis'**. Vous pouvez exécuter ces tests en exécutant le fichier avec la commande suivante :
 
    ```bash
-   python testSepsis.py
+   python -m unittest discover
 ````
 
 Assurez-vous d'avoir les dépendances nécessaires installées avant d'exécuter les tests.
@@ -53,4 +53,4 @@ Les contributions à ce projet sont les bienvenues. Si vous souhaitez apporter d
 
 ## Auteurs
 
-Ce projet a été développé par **Aboubacar CAMARA**, **Aaricia DOMINGUEZ** et **Adrien ALVAREZ** dans le cadre du projet annuel de l'école ESGI Lyon. Si vous avez des questions, veuillez nous contacter à l'adresse **aa-dz@hotmail.com**.
+Ce projet a été développé par **Aboubacar CAMARA**, **Aaricia DOMINGUEZ** et **Adrien ALVAREZ** dans le cadre du projet annuel de l'école ESGI Lyon. Si vous avez des questions, veuillez nous contacter à l'adresse **aa-dz@hotmail.com** ou **aboubacar.camara.abk@gmail.com**.
